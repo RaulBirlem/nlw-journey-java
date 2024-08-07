@@ -37,5 +37,7 @@ public class Participant {
     public Participant(String email, Trip trip){
         this.email = email;
         this.trip = trip;
+        this.isConfirmed = false;
+        this.name = "";
     }
 }
