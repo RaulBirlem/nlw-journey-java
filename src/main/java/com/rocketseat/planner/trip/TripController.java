@@ -100,7 +100,6 @@ public class TripController {
 
             ActivityResponse activityService = this.activityService.registerActivity(payload, rawTrip);
 
-            if(rawTrip.getIsConfirmed()) this.participantService.triggerConfirmationEmailToParticipant(payload.email());
 
             return ResponseEntity.ok(activityService);
         }
